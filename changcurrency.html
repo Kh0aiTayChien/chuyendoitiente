@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChangCurrency</title>
+<style>
+    <style>
+
+    </style>
+
+
+</head>
+<body>
+<h1>Chuyển đổi tiền tệ</h1>
+<form>
+<table border="0">
+    <colgroup>
+        <col width="240">
+        <col width="120">
+        <col width= "120">
+        <col width="120">
+        <col width="120">
+        <col width="60">
+        <col width="60">
+    </colgroup>
+<tr>
+    <th >Amount</th>
+    <th></th>
+    <th>Form Currency</th>
+    <th></th>
+    <th>To Currency</th>
+</tr>
+    <tr>
+    <th ><input type="text" id ="number"></th>
+    <th></th>
+    <th>
+        <select id="select1" >
+        <option value="a" >Viet Nam </option>
+        <option value="b" > USA</option>
+        </select>
+    </th>
+    <th></th>
+    <th>
+        <select id="select2" >
+        <option value="a">Viet Nam </option>
+        <option value="b">USA </option>
+    </select>
+    </th>
+        <th></th>
+        <th> <button onclick="chuyendoi()"> Con Vẹt </button></th>
+        <script>
+
+            function chuyendoi() {
+                let a = document.getElementById('number').value;
+                let select1 = document.getElementById('select1').value;
+                let select2 = document.getElementById('select2').value;
+
+                if (select1 == select2){alert(a)};
+                if (select1 =="a"  && select2 == "b"){alert(a/23000)};
+                if (select1 =="b"  && select2 == "a"){alert (a*23000)};
+}
+
+        </script>
+    </tr>
+</form>
+</table>
+</body>
+</html>
